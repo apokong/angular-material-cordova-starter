@@ -8,7 +8,7 @@
 
 ### Summary
 
-An Angular-Cordova Starter kit featuring Angular5, angular material, Typescript, Cordova
+An Angular-Cordova Starter kit featuring Angular5, angular material, Cordova, SCSS and Typescript, with angular Routing Transitions.
 
 
 ##### Technology Stack
@@ -20,12 +20,12 @@ An Angular-Cordova Starter kit featuring Angular5, angular material, Typescript,
 
 ##### Installations
 ###### Gulp + Cordova + Angular5 + typescript
-- npm install -g gulp cordova @angular/cli typescript
+- npm install -g gulp cordova @angular/cli typescript ios-deploy
 ###### NPM install
 - npm install
 
 
-##### Platform: iOS
+##### Start
 ###### build www/ files with Anugluar
 - ng build
 ###### build iOS files with Cordova
@@ -38,7 +38,7 @@ An Angular-Cordova Starter kit featuring Angular5, angular material, Typescript,
 
     $ ng serve
 
-###### Emulate in iOS simulator
+###### Emulate in iPad Air 2 simulator
 
     $ gulp
 
