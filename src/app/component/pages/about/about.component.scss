@@ -1,0 +1,5 @@
+@import "../../../../scss/_variables";
+.about {
+    margin: calc(#{$margin} * 2) $margin;
+    color: $color-red;
+}

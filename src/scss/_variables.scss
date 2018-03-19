@@ -1,0 +1,83 @@
+// *************************************
+//
+// VARIABLES
+//
+// *************************************
+
+
+// *************************************
+// FONTS
+// *************************************
+$font-book: 'ClassicGrotesquePro-Book';
+$font-sbold: 'ClassicGrotesquePro-SmBd';
+
+
+// *************************************
+// COLOR
+// *************************************
+$color-red: #f8453c;
+$color-blue: #1978D4;
+
+
+// *************************************
+// SIZE
+// *************************************
+$margin: 30px;
+
+
+// *************************************
+// ANIMATIONS
+// *************************************
+$anim-time: .38s;
+$anim-function: cubic-bezier(.4,0,.2,1);
+
+
+// *************************************
+// VARIABLES
+// *************************************
+@mixin scrollbar($x, $y) {
+  @if $x == true {
+    overflow-x: scroll;
+  }
+  @else {
+    overflow-x: hidden;
+  }
+  @if $y == true {
+    overflow-y: scroll;
+  }
+  @else {
+    overflow-y: hidden;
+  }
+  &::-webkit-scrollbar-track
+  {
+      border-radius: 10px;
+  }
+  &::-webkit-scrollbar
+  {
+      width: 3px;
+      height: 3px;
+  }
+  &::-webkit-scrollbar-thumb
+  {
+      border-radius: 3px;
+      background-color: $color-pale-blue-grey;
+      opacity: .7;
+  }
+}
+@mixin nthChildIterator($prop, $limit: 1, $start: 1, $step: 1) {
+  $index: 1;
+  @while $index <= $limit {
+    @if $index == 0 {
+      &:first-child { #{$prop}: ($start + $step * $index) + s; }
+    }
+    @else {
+      &:nth-child(#{$index}) { #{$prop}: ($start + $step * $index) + s; }
+    }
+    $index: $index + 1;
+  }
+}
+
+
+// *************************************
+// KEYFRAMES
+// *************************************
